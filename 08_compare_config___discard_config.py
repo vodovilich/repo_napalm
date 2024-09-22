@@ -5,7 +5,7 @@ driver = get_network_driver('ios')
 iol_01 = driver('192.168.100.3', 'gandalf', 'grey')
 iol_01.open()
 
-iol_01.load_merge_candidate(filename='07.txt')
+iol_01.load_merge_candidate(filename='08_commands.txt')
 diff = iol_01.compare_config()
 print(type(diff))
 
