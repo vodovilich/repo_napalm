@@ -1,0 +1,9 @@
+logging buffered 16506
+ip access-list extended rfc1918-in-acl
+ 10 deny   ip 10.0.0.0 0.255.255.255 any
+ 20 deny   ip 172.16.0.0 0.15.255.255 any
+ 30 deny   ip 192.168.0.0 0.0.255.255 any
+ 40 permit ip any any
+
+ip access-list extended TEST-EXT-ACL
+ 10 permit ip any any
